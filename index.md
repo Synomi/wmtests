@@ -41,7 +41,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 <script>
   //http://armory.warmane.com/api/guild/Overload/Outland/
 (function() {
-  var warmaneAPI = "http://armory.warmane.com/api/guild/Overload/Outland/";
+  var warmaneAPI = "//armory.warmane.com/api/guild/Overload/Outland/";
   $.getJSON( warmaneAPI, {    
     format: "json"
   })
