@@ -37,3 +37,24 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script>
+  //http://armory.warmane.com/api/guild/Overload/Outland/
+(function() {
+  var warmaneAPI = "http://armory.warmane.com/api/guild/Overload/Outland/";
+  $.getJSON( warmaneAPI, {    
+    format: "json"
+  })
+    .done(function( data ) {
+console.log(data);
+/*
+      $.each( data.items, function( i, item ) {
+        $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
+        if ( i === 3 ) {
+          return false;
+        }
+      });*/
+    });
+})();  
+</script>
+
